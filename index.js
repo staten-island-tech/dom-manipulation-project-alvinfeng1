@@ -1,1 +1,1 @@
-const DOMSelectors = "";
+const DOMSelectors = {};
