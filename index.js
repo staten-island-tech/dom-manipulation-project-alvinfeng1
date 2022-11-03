@@ -1,8 +1,8 @@
 const DOMSelectors = {
   button: document.getElementById("btn"),
-  text: document.querySelector("#test"),
-  points: document.querySelectorAll(".point"),
+  text: document.querySelector("#text"),
   box: document.getElementById("big-black-box"),
+  points: document.querySelectorAll(".point"),
 };
 
 function backgroundAndText(background, text) {
@@ -11,6 +11,9 @@ function backgroundAndText(background, text) {
   text.style.fontSize = "40px";
 }
 
+DOMSelectors.button.addEventListener("click", function () {
+  backgroundAndText(DOMSelectors.box, DOMSelectors.text);
+});
 // const qsa = (els) => document.querySelectorAll(els);
 // const allColors = qsa(".color");
 
