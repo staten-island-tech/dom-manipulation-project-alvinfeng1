@@ -12,8 +12,19 @@ function backgroundAndText(background, text) {
 }
 
 DOMSelectors.button.addEventListener("click", function () {
-  backgroundAndText(DOMSelectors.box, DOMSelectors.text);
+  backgroundAndText(DOMSelectors.background, DOMSelectors.text);
 });
+console.log(DOMSelectors.background, DOMSelectors.text);
+
+function changeLi() {
+  let pointIndex = 1;
+  DOMSelectors.points.forEach((point) => {
+    point.addEventListener("click", function () {
+      point.textConent = `hello i am a point ${pointIndex}`;
+    });
+  });
+}
+changeLi();
 // const qsa = (els) => document.querySelectorAll(els);
 // const allColors = qsa(".color");
 
