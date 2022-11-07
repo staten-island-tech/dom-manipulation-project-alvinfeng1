@@ -5,26 +5,30 @@ const DOMSelectors = {
   points: document.querySelectorAll(".point"),
 };
 
-function backgroundAndText(background, text) {
-  background.style.backgroundColor = "red";
-  text.textContent = "this is know a big red box";
+function styling(document, text) {
+  document.body.style.backgroundColor = "red";
+  text.textContent = "this is a big red box";
   text.style.fontSize = "40px";
 }
 
 DOMSelectors.button.addEventListener("click", function () {
-  backgroundAndText(DOMSelectors.background, DOMSelectors.text);
+  document.body.style.backgroundColor = "black";
+  text.style.color = "white";
+  text.textContent = "this is know a big black box";
+  text.style.fontSize = "40px";
 });
-console.log(DOMSelectors.background, DOMSelectors.text);
 
-function changeLi() {
-  let pointIndex = 1;
-  DOMSelectors.points.forEach((point) => {
-    point.addEventListener("click", function () {
-      point.textConent = `hello i am a point ${pointIndex}`;
-    });
-  });
-}
-changeLi();
+// function changeLi() {
+//   let pointIndex = 1;
+//   DOMSelectors.points.forEach((point) => {
+//     point.addEventListener("click", function () {
+//       point.textConent = `hello i am a point ${pointIndex}`;
+//       pointIndex++;
+//     });
+//   });
+// }
+// changeLi();
+
 // const qsa = (els) => document.querySelectorAll(els);
 // const allColors = qsa(".color");
 
