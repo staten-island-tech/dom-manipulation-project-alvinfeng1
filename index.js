@@ -1,22 +1,16 @@
 const DOMSelectors = {
   button: document.getElementById("btn"),
   text: document.querySelector("#text"),
-  box: document.getElementById("big-black-box"),
+  box: document.getElementById("box"),
   points: document.querySelectorAll(".point"),
 };
 
 function styling(document, text) {
   document.body.style.backgroundColor = "red";
-  text.textContent = "this is a big red box";
+  text.textContent = "this is a different colored box";
   text.style.fontSize = "40px";
-}
-
-DOMSelectors.button.addEventListener("click", function () {
-  document.body.style.backgroundColor = "black";
   text.style.color = "white";
-  text.textContent = "this is know a big black box";
-  text.style.fontSize = "40px";
-});
+}
 
 // function changeLi() {
 //   let pointIndex = 1;

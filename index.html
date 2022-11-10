@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="big-black-box"></div>
-    <p id="text">snacks</p>
+    <div id="box"></div>
+    <p id="text">blue box</p>
     <form name="form">
-      <button type="button" onclick="" id="btn">click me</button>
-      <imput type="text" name="background">
+      <button type="button" onclick="styling(document, text)" id="btn">
+        click me
+      </button>
+      <div id="imput">
+        <label for="name">Put something</label>
+        <input type="text" id="name" size="10" />
+      </div>
     </form>
+    <input type="submit" value="submit" clss="btn" />
 
     <!-- <div>
       <p id="reminder">open the console you bozo</p>
