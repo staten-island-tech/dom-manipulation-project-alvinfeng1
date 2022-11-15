@@ -1,10 +1,7 @@
 const DOMSelectors = {
   button: document.getElementById("btn"),
-  text: document.querySelector("#text"),
-  box: document.getElementById("box"),
-  points: document.querySelectorAll(".point"),
-  imput: document.querySelector("#input"),
-  form: document.querySelectorAll("#form"),
+  box: document.getElementById("#text-box"),
+  form: document.querySelectorAll("form"),
 };
 
 DOMSelectors.button.addEventListener("sumbit", function () {
@@ -12,3 +9,5 @@ DOMSelectors.button.addEventListener("sumbit", function () {
   let imput = DOMSelectors.box.value;
   console.log(imput);
 });
+
+console.log;
