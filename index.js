@@ -2,16 +2,13 @@ const DOMSelectors = {
   button: document.getElementById("btn"),
   box: document.getElementById(".text-box"),
   form: document.querySelectorAll("form"),
-  removebuttton: getElementById("remove btn"),
-  display: getElementById("display-img"),
+  removeButton: document.getElementById("remove-btn"),
+  display: document.getElementById("display-img"),
 };
 
-DOMSelectors.button.addEventListener("button", function () {
-  Event.preventDefault(refresh);
+DOMSelectors.button.("button", function () {
+  e.preventDefault();
   let imput = DOMSelectors.box.value;
+  //create object from values
   console.log(imput);
-});
-
-DOMSelectors.removebuttton.addEventListener("removebuttton", function () {
-  let image = DOMSelectors.display.value;
 });
