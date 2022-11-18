@@ -8,20 +8,20 @@ h1 {
   color: rgb(123, 139, 52);
   margin-top: 20px auto;
 }
-.btn,
-.btn:link,
-.btn:visited {
+#btn,
+#btn:link,
+#btn:visited {
   text-transform: uppercase;
   padding: 1.5rem 2rem;
   display: inline-block;
   border-radius: 1rem;
   margin-top: 20px auto;
 }
-.btn:hover {
+#btn:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgb(100, 99, 99);
 }
-.btn:active {
+#btn:active {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgb(135, 103, 103);
 }
