@@ -10,15 +10,9 @@ const DOMSelectors = {
   brandInput: document.getElementById("brand-input"),
 };
 
-// function getValues() {
-//   console.log($("#form-imput").serializeArray());
-//   Event.preventDefalut();
-// }
-
 DOMSelectors.button.addEventListener("submit", function () {
   Event.preventDefault();
-  // let everything = document.querySelectorAll("form-imput");
-  // console.log(everything);
+
   let imputs = Array.box;
   typeInput = imputs[1].value;
   flavorInput = imputs[2].value;
@@ -45,24 +39,24 @@ function display() {
     <br>
     <h3>${h3}</h3>
     <br>
-    <button class = "remove-btn"> Remove</button>
+    <button id = "remove-btn">Remove</button>
     </div>
        `
   );
 }
 
-// function destroy() {
-//   const btn = Array.form(document.getElementByClassName("remove-button"));
-//   btn.forEach((button) => {
-//     button.addEventListener("click", function () {
-//       this.parentElement.remove;
-//     });
-//   });
-// }
+function destroy() {
+  const btn = Array.form(document.getElementById("remove-button"));
+  btn.forEach((button) => {
+    button.addEventListener("click", function () {
+      this.parentElement.remove;
+    });
+  });                  
+}
 
 DOMSelectors.form.addEventListener("submit", function () {
   event.preventDefault();
-  // destroy();
+  destroy();
   display();
   resetbutton();
 });
