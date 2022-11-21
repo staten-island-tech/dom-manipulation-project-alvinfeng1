@@ -28,7 +28,6 @@ DOMSelectors.button.addEventListener("submit", function () {
 });
 
 DOMSelectors.resetButton.addEventListener("submit", function () {
-  e.preventDefault();
   Document.getElementById("form").reset();
 });
 
@@ -45,3 +44,8 @@ function display() {
     `
   );
 }
+
+  DOMSelectors.removeButton.addEventListener("removebuttton", function () {
+    let image = DOMSelectors.display.value;
+    delete image
+  });
