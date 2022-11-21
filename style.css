@@ -29,3 +29,8 @@ h1 {
   margin:10px auto;
   color: forestgreen;
 }
+.display-card {
+ background-color: aqua;
+ border: 1px black solid;
+ width: 20%
+}

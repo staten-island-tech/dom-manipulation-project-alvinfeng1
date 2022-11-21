@@ -7,33 +7,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form name="form">
+    <form id="form">
       <h1>Favorite snacks</h1>
       <div id="form-input">
         <label for="name">Type</label>
-        <input type="text" class="text-box" id="type" />
+        <input type="text" class="text-box" id="type-input" />
       </div>
 
       <div id="form-input">
         <label for="name">Flavor</label>
-        <input type="text" class="text-box" id="flavor" />
+        <input type="text" class="text-box" id="flavor-input" />
       </div>
 
       <div id="form-input">
         <label for="name">brand</label>
-        <input type="text" class="text-box" id="brand" />
+        <input type="text" class="text-box" id="brand-input" />
       </div>
 
-      <input type="submit" value="submit" id="btn" />
+      <button type="submit" value="submit" id="btn">SUBMIT</button>
       <button id="reset button" type="reset">Reset button</button>
 
-      <div class="display-card">
-        <h2 class="display-type"></h2>
-        <h2 class="display-flavor"></h2>
-        <h3 class="display-brand"></h3>
-        <img id="display-img" src="chips.jpg" />
-        <button class="remove-btn">Remove image</button>
-      </div>
+      <div id="display-card"></div>
     </form>
 
     <script src="index.js"></script>
