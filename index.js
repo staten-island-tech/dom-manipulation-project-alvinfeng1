@@ -11,8 +11,6 @@ const DOMSelectors = {
 };
 
 DOMSelectors.button.addEventListener("submit", function () {
-  Event.preventDefault();
-
   let imputs = Array.box;
   typeInput = imputs[1].value;
   flavorInput = imputs[2].value;
@@ -46,7 +44,7 @@ function display() {
 }
 
 function destroy() {
-  const btn = Array.form(document.getElementById("remove-btn"));
+  const btn = Array.from(document.getElementById("remove-btn"));
   btn.forEach((button) => {
     button.addEventListener("click", function () {
       this.parentElement.remove;
