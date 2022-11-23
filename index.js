@@ -43,14 +43,14 @@ function display() {
   );
 }
 
-function destroy() {
-  const btn = Array.from(document.getElementById("remove-btn"));
-  btn.forEach((button) => {
-    button.addEventListener("click", function () {
-      this.parentElement.remove;
-    });
-  });
-}
+// function destroy() {
+//   const btn = Array.from(document.getElementById("remove-btn"));
+//   btn.forEach((button) => {
+//     button.addEventListener("click", function () {
+//       this.parentElement.remove;
+//     });
+//   });
+// }
 
 DOMSelectors.form.addEventListener("submit", function () {
   event.preventDefault();
