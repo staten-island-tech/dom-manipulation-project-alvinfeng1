@@ -46,12 +46,12 @@ function display() {
 }
 
 function destroy() {
-  const btn = Array.form(document.getElementById("remove-button"));
+  const btn = Array.form(document.getElementById("remove-btn"));
   btn.forEach((button) => {
     button.addEventListener("click", function () {
       this.parentElement.remove;
     });
-  });                  
+  });
 }
 
 DOMSelectors.form.addEventListener("submit", function () {
