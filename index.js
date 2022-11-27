@@ -1,7 +1,6 @@
 const DOMSelectors = {
   button: document.getElementById("btn"),
   form: document.getElementById("form"),
-  removeButton: document.getElementById("remove-btn"),
   display: document.getElementById("display-card"),
   formInput: document.querySelectorAll("#form-input"),
   resetButton: document.getElementById("resetbutton"),
@@ -37,24 +36,24 @@ function display() {
     <br>
     <h3>${h3}</h3>
     <br>
-    <button id = "remove-btn">Remove</button>
+    <button id = "removebtn">Remove</button>
     </div>
        `
   );
 }
 
-// function destroy() {
-//   const btn = Array.from(document.getElementById("remove-btn"));
-//   btn.forEach((button) => {
-//     button.addEventListener("click", function () {
-//       this.parentElement.remove;
-//     });
-//   });
-// }
+function destroy() {
+  const btn = Array.from(document.getElementById("removebtn"));
+  btn.forEach((button) => {
+    button.addEventListener("click", function () {
+      this.parentElement.remove;
+    });
+  });
+}
 
 DOMSelectors.form.addEventListener("submit", function () {
   event.preventDefault();
-  destroy();
   display();
+  destroy();
   resetbutton();
 });
