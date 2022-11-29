@@ -43,7 +43,7 @@ function display() {
 }
 
 function destroy() {
-  const btn = Array.from(document.getElementById("removebtn"));
+  const btn = Array.from(document.getElementsById("removebtn"));
   btn.forEach((button) => {
     button.addEventListener("click", function () {
       this.parentElement.remove;
