@@ -3,7 +3,6 @@ const DOMSelectors = {
   form: document.getElementById("form"),
   display: document.getElementById("display-card"),
   formInput: document.querySelectorAll("#form-input"),
-  resetButton: document.getElementById("resetbutton"),
   typeInput: document.getElementById("type-input"),
   flavorInput: document.getElementById("flavor-input"),
   brandInput: document.getElementById("brand-input"),
@@ -17,7 +16,7 @@ DOMSelectors.button.addEventListener("submit", function () {
   console.log(imputs);
 });
 
-function resetbutton() {
+function clear() {
   DOMSelectors.brandInput.value = ``;
   DOMSelectors.flavorInput.value = ``;
   DOMSelectors.typeInput.value = ``;
@@ -30,11 +29,11 @@ function display() {
   DOMSelectors.display.insertAdjacentHTML(
     "afterbegin",
     `<div class = "display-card"> 
-    <h1>${h1}</h1>
+    <h1> Type: ${h1}</h1>
     <br>
-    <h2>${h2}</h2>
+    <h2> Flavor:  ${h2}</h2>
     <br>
-    <h3>${h3}</h3>
+    <h3> Brand: ${h3}</h3>
     <br>
     <button id = "removebtn">Remove</button>
     </div>
@@ -43,7 +42,7 @@ function display() {
 }
 
 function destroy() {
-  const btn = Array.from(document.getElementsById("removebtn"));
+  const btn = Array.from(document.getElementById("removebtn"));
   btn.forEach((button) => {
     button.addEventListener("click", function () {
       this.parentElement.remove;
@@ -55,5 +54,5 @@ DOMSelectors.form.addEventListener("submit", function () {
   event.preventDefault();
   display();
   destroy();
-  resetbutton();
+  clear();
 });
