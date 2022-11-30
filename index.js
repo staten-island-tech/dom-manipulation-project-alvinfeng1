@@ -35,7 +35,7 @@ function display() {
     <br>
     <h3> Brand: ${h3}</h3>
     <br>
-    <button id = "removebtn">Remove</button>
+    <button type="button" id="removebtn">Remove</button>
     </div>
        `
   );
