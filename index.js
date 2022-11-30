@@ -29,20 +29,20 @@ function display() {
   DOMSelectors.display.insertAdjacentHTML(
     "afterbegin",
     `<div class = "display-card"> 
-    <h1> Type: ${h1}</h1>
+    <h2> Type:${h1}</h2>
     <br>
-    <h2> Flavor:  ${h2}</h2>
+    <h2> Flavor:${h2}</h2>
     <br>
-    <h3> Brand: ${h3}</h3>
+    <h2> Brand:${h3}</h2>
     <br>
-    <button type="button" id="removebtn">Remove</button>
+    <button type="button" class="remove-btn">Remove</button>
     </div>
        `
   );
 }
 
 function destroy() {
-  const btn = Array.from(document.getElementById("removebtn"));
+  const btn = Array.from(document.getElementsByClassName("remove-btn"));
   btn.forEach((button) => {
     button.addEventListener("click", function () {
       this.parentElement.remove;
