@@ -35,14 +35,14 @@ function display() {
     <br>
     <h2> Brand:${h3}</h2>
     <br>
-    <button type="button" class="remove-btn">Remove</button>
+    <button id="remove-btn">Remove</button>
     </div>
        `
   );
 }
 
 function destroy() {
-  const btn = Array.from(document.getElementsByClassName("remove-btn"));
+  const btn = Array.from(document.getElementById("remove-btn"));
   btn.forEach((button) => {
     button.addEventListener("click", function () {
       this.parentElement.remove;
